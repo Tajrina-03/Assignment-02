@@ -155,7 +155,7 @@ h1,h2{
 }
 
 .plants-section h2 {
-  font-size: 32px;
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
@@ -236,6 +236,78 @@ h1,h2{
     height: 200px;
 }
 }
+/* Join Section style */
+.join-section {
+      background-image: url('assets/news-letter-bg.png'); 
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+    }
+
+    .join-box {
+      color: white;
+      padding: 40px 30px;
+      border-radius: 10px;
+      width: 100%;
+      text-align: center;
+     
+    }
+
+    .join-box h1 {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 23px;
+     
+    } 
+
+    .join-form {
+      display: flex;
+      justify-content: center;
+     
+      }
+
+    .join-form input[type="email"] {
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc; 
+      outline: none;
+      width: 600px;
+    }
+
+    .join-form button {
+      padding: 19px 50px;
+      font-size: 16px;
+      border: none;
+      background-color: #ff5722;
+      color: white;
+      cursor: pointer;
+      
+    } 
+
+    .join-form button:hover {
+      background-color: #e64a19;
+    } 
+
+    /*  Join Section responsive for mobile */
+    @media screen and (max-width: 576px){
+      .join-form {
+        flex-direction: row;
+      } 
+       .join-form input[type="email"] {
+        flex: 1;
+        
+      } 
+
+      .join-form button {
+        width: 150px;
+      }
+}
+
+
 /* Footer Style */
 .footer {
   color: #4b5563;
@@ -284,9 +356,6 @@ h1,h2{
   height: 30px;
   gap: 20px;
 }
-
-
-
 
 /*  Footer section responsive for Mobile */
 @media (max-width: 576px) {
